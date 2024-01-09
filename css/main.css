@@ -1,0 +1,128 @@
+/*  css/main.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* You can choose your preferred font */
+    background-color: #333;
+}
+
+button {
+    margin-top: 20px;
+
+}
+
+/* Styling the navigation bar */
+#nav-bar {
+    margin-bottom: 20px;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    position: sticky; /* Makes the navbar sticky */ 
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensures navbar stays above other content */
+    padding: 20px 20px; /* Some padding around the content */
+     display: flex; /* Use Flexbox */
+    align-items: center; /* Vertically center all items in the navbar */
+    justify-content: space-between; /* Space between items, pushing them to the ends */
+}
+
+/* Styling the list inside the navbar */
+#nav-ul {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Aligns items in a row */
+    justify-content: flex-end; /* Aligns links to the right */
+    padding: 0;
+}
+
+/* Styling each navigation item */
+.nav-item {
+    margin-left: 20px; /* Adds space between the links */
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Vertically center content within each nav item */
+    
+}
+
+/* Styling the links */
+.nav-item a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Sets the font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect on links */
+.nav-item a:hover {
+    color: grey; /* Changes color when hovered */
+}
+
+
+
+.size-up {
+    width:200px;
+    padding:20px;
+    height: 10px;
+    width:250px;
+    border: 1px solid #f7f0f0;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+.strong-text {
+    font-weight: bold sans-serif ;
+}
+
+.form-submit-button, #loadAbout, #loadContact {
+    background: #44a2ee;
+    color: #fff;
+    height: 50px;
+    width:250px;
+    background: #44a2ee;
+    color: #fff;
+    border: 1px solid #eee;
+    border-style: outset;
+    border-radius: 20px;
+    font: bold 15px arial,sans-serif;
+    text-shadow: none;
+    margin: 20px 0px 20px 0px;
+    padding:20px;
+    }
+
+
+
+/*  */
+    .form-submit-button:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    }
+
+
+input {
+    display: block;
+    margin: 20px 0px 20px 0px;
+}
+
+input[type="text"]::placeholder {
+    color: gray;
+    font-size: 14px;
+    /* Other placeholder styling properties */
+}
+
+#root, #form-container {
+    margin-left: 15px;
+    color: #eee;
+}
+#loadAbout, #loadContac, #contentArea{
+    margin-right: 10px;
+    margin-left: 15px;
+    color: #eee;
+
+}
+
+/* End main.css */
